@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UNA SAAS</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.css" rel="stylesheet">
+    <style>
+        .login-box{
+            padding:10px;
+            border:1px solid #ddd;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            display: block;
+            margin:200px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="login-box col-4 offset-4">
+                <form action="/login" method="post">
+                    <div class="form-group">
+                        <input type="text" name="tenant" class="form-control input-sm" placeholder="租户ID" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="username" class="form-control input-sm" placeholder="用户名" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control input-sm" placeholder="登录密码"/>
+                    </div>
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-outline-success">登录</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+</body>
+</html>
