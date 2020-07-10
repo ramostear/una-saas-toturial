@@ -20,12 +20,12 @@ spring:
 una:
   master:
     datasource:
-      url:  jdbc:mysql://localhost:3306/master_tenant?useSSL=false
-      username: root
-      password: root
+      url:  jdbc:mysql://192.168.100.100:3306/master_tenant?useSSL=false
+      username: admin
+      password: admin@2020!@#
       driverClassName:  com.mysql.jdbc.Driver
       maxPoolSize:  10
-      idleTimeout:  300000
+      idleTimeout:  3000
       minIdle:  10
       poolName: master-database-connection-pool
 logging:
